@@ -155,9 +155,17 @@ cat s28_q3_staleindex.txt
 hostname
 whoami
 ```
- - hostname - Show your hostname
- - whoami - Show your username
+ - hostname - Shows your hostname
+ - whoami - Shows your username
 ---
 ###### Explanation
  - I ran the required command to find all APT index files older than 7 days and saved them in s28_q3_staleindex.txt.
 ----
+###### Clean Outdated Metadata
+```
+sudo apt clean
+sudo rm -rf /var/lib/apt/lists/*
+sudo apt update
+```
+- This Command Clean The Outdated metadata
+---
